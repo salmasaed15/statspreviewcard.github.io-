@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    min-height: 100vh;
+    background: hsl(233, 47%, 7%);
+    Font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+.container{ 
+    width: 550px;
+    background-color:hsl(244, 38%, 16%) ;
+    display: flex; 
+    align-items: center;
+    justify-content:space-around;
+    flex-direction:row;
+    border-radius: 10px;
+}
+
+.container .img{
+    width:50%;
+    position: relative;
+}
+.container .img .co-img{
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    background-color: hsl(277, 64%, 61%); ;
+    z-index: 2;
+    content: " ";
+    padding-top: 0;
+    overflow: hidden;
+    opacity: .7;
+    border-radius: 10px 0 0 10px;
+}
+.container .img .head-img{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+    
+.container .insights{
+    width:50%;
+    background-color:hsl(244, 38%, 16%) ;
+    padding: 23px;
+    border-radius: 0 10px 10px 0;
+}
+
+.container .insights h1{
+    color:hsl(0, 0%, 100%);
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.insights h1 span{
+    color:hsl(277, 64%, 61%);
+}
+.insights p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+    padding-bottom: 28px ;
+    line-height: 15px;
+}
+.insights .info{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.insights .info .review h2,
+.insights .info .review2 h2,
+.insights .info .review3 h2{
+    color:hsl(0, 0%, 100%);;
+    font-size: 15px;
+}
+.insights .info .review span,
+.insights .info .review2 span,
+.insights .info .review3 span{
+    color:hsla(0, 0%, 100%, 0.75);;
+    font-size: 10px;
+}
+
+@media (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .img{
+        width: 100%;
+    }
+    .container .img .head-img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .container .img .co-img{
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .container .insights{
+        width:100%;
+    }
+    .container .insights h1{
+        text-align: center;
+        width: 180px;
+        margin: auto;
+    }
+    .insights p{
+        text-align: center;
+    }
+    .insights .info{
+        flex-direction: column;
+    }
+    .info .review, .review2, .review3{
+        margin: 20px;
+    }
+    .insights .info .review h2,
+    .insights .info .review2 h2,
+    .insights .info .review3 h2{
+        font-size: 25px;
+    }
+    .insights .info .review span,
+    .insights .info .review2 span,
+    .insights .info .review3 span{
+        font-size: 10px;
+}
+}
+
+
+
+
+
+
+
+
